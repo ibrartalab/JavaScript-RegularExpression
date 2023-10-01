@@ -107,4 +107,26 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result16 = sentence.match(example16)
 // console.log(result16)
 //------------------------------------------------
+// let example17 = new RegExp('\\d','g') //lower case d
+// let result17 = sentence.match(example17)
+// console.log(result17)
+
+// let example17_07 = new RegExp('\\D','g')//upper case D
+// let result17_07 = sentence.match(example17_07)
+// console.log(result17_07)
+//-----------------------------------------------------
+// let example18 = new RegExp('\\s','g')
+// let result18 = sentence.match(example18)
+// console.log(result18)
+//-----------------------------------------------
+// let example18 = new RegExp('\\S','g')
+// let result18 = sentence.match(example18)
+// console.log(result18)
+//-----------------------------------------------
+
+
+
+
+
+
 

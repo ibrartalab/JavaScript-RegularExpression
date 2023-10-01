@@ -259,3 +259,29 @@ let result16 = sentence.match(example16)
 console.log(result16)
 //THe Capital \W is used to get all the non-character.Like not 0-9,a-z and underscore _ 
 ```
+## Example 18
+```javascript
+//Matching all the numbers only using lowerCase d
+let example17 = new RegExp('\\d','g')
+let result17 = sentence.match(example17)
+console.log(result17)
+
+//Matching all non-numbers using UpperCase D
+let example17 = new RegExp('\\D','g')
+let result17 = sentence.match(example17)
+console.log(result17)
+```
+## Example 19
+```javascript
+let example18 = new RegExp('\\s','g') //it mnust be lower case s with backslash.
+let result18 = sentence.match(example18)
+console.log(result18)
+//get all the whitespaces in the string.
+```
+## Example 20
+```javascript
+let example18 = new RegExp('\\S','g') //it mnust be Upper case s with backslash.
+let result18 = sentence.match(example18)
+console.log(result18)
+//get all the matched pattern except whitespaces.
+```
