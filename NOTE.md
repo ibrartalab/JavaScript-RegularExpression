@@ -1,5 +1,5 @@
 # JavaScript Regular Expression 
-## Example One
+## Example 1
 ```Javascript
 //simple sentence for testing
 const sentence = 'The Quick Brown Fox Jump Over The Lazy Dog';
@@ -18,7 +18,7 @@ Example1 and Example2 both are work the same.But i think you notice that using  
 we reduce code lines,the same thing we get with two lines in the example one using the new keyword we just done in one line.
 */
 ```
-## Example Two 
+## Example 2
 ```javascript
 //Looking for multiples values to check whether its exist or not using test method(|OR)
 let example2 = new RegExp('dog|Fox|jump').test(sentence)
@@ -28,7 +28,7 @@ let example2_02 = /dog|Fox|jump/
 let result2 = example2_02.test(sentence)
 console.log(result2)
 ```
-## Example Three
+## Example 3
 ```javascript
 // let example3 = new RegExp('jump').test(sentence) //--> false
 let example3 = new RegExp('jump','i').test(sentence) //--> True
@@ -44,7 +44,7 @@ console.log(result3)
 let example3_03_3 = new RegExp('jump|over|the','i').test(sentence)
 console.log(example3_03_3)
 ```
-## Example Four
+## Example 4
 ```javascript
 /*
 The Match Method --> Is used to grab the value which we are looking inside the string provided.It will give us the word not like test method they just give us the true and false value either if it exist or not.the match method return the result as an array.
@@ -68,7 +68,7 @@ OutPut:>>
 
 //if the pattern found it will return an array with the matched pattern ,but if doesn't match it return null.
 ```
-## Example Five
+## Example 5
 ```javascript
 let example5 = new RegExp('the','ig')
 let result5 = sentence.match(example5)
@@ -88,7 +88,7 @@ console.log(result5[0])
 OutPut:>>
 ['Dog'] //Because the (dog) used once in the sentence.
 ```
-## Example Six
+## Example 6
 ```javascript
 let example6 = new RegExp('.o.','ig')
 let result6 = sentence.match(example6)
@@ -133,7 +133,7 @@ OutPut:>>
 ]
 
 ```
-## Example Seven
+## Example 7
 ```javascript
 let example7 = new RegExp('.','ig')
 let result7 = sentence.match(example7)
@@ -149,7 +149,7 @@ OutPut:>>
   'a', 'z', 'y', ' ', 'D', 'o', 'g'
 ]
 ```
-## Example Eight
+## Example 8
 ```javascript
 //Looking for specific pattern oor range of pattern using Match method with brackets []
 //In here we are looking for that how many b,d,h each letter present or exist in the string.
@@ -169,14 +169,14 @@ OutPut:>>
   'a', 'D'      
 ]
 ```
-## Example Nine
+## Example 9
 ```javascript
 let example9 = new RegExp('[1-3x-z]','ig')
 let result9 = sentence.match(example9)
 console.log(result9)
 //Match number and alphabets range using Match method with []
 ```
-## Example Ten
+## Example 10
 ```javascript
 //The caret symbol (^) is used to ignore wwhat we are looking for.inside the bracket.
 let exapmle10 = new RegExp('[^1-3a-k ]','ig')
@@ -193,7 +193,7 @@ OutPut:>>
 ]
 //In this case get everything except what we have provided inside the brackets.
 ```
-## Example Eleven
+## Example 11
 ```javascript
 let example11 = new RegExp('l+','ig')
 const result11 = sentence.match(example11)
@@ -203,7 +203,7 @@ console.log(result11)
 OutPut:>>
 [ 'L', 'll' ]
 ```
-## Example Twelve
+## Example 12
 ```javascript
 let sentence2 = 'Gooooooooooooogle' //Just for testing purpose
 let example12 = new RegExp('go*','i') // Just o not the letters after the last o.
@@ -211,4 +211,11 @@ let result12 = sentence2.match(example12)
 console.log(result12)
 //The * Astrix used to looking for zero or more time occurnce of a letter in string.
 //Go* --> Means whatever we dont know that how many times the o comes after the first o in the string , we just want that if they occurence is 0 or more time.
+```
+## Example 13
+```javascript
+//The lazy matching with Match method ( ? lazy matching)
+let example13 = new RegExp('T.*?')
+let result13 = sentence.match(example13)
+console.log(result13)
 ```

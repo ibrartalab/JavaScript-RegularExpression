@@ -86,4 +86,6 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result12 = sentence2.match(example12)
 // console.log(result12)
 //----------------------------------------------
-
+let example13 = new RegExp('T.*?')
+let result13 = sentence.match(example13)
+console.log(result13)
