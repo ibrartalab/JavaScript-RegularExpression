@@ -169,4 +169,46 @@ OutPut:>>
   'a', 'D'      
 ]
 ```
+## Example Nine
+```javascript
+let example9 = new RegExp('[1-3x-z]','ig')
+let result9 = sentence.match(example9)
+console.log(result9)
+//Match number and alphabets range using Match method with []
+```
+## Example Ten
+```javascript
+//The caret symbol (^) is used to ignore wwhat we are looking for.inside the bracket.
+let exapmle10 = new RegExp('[^1-3a-k ]','ig')
+let result10 = sentence.match(exapmle10)
+console.log(result10)
 
+OutPut:>>
+[
+  'T', 'Q', 'u', 'r', 'o',
+  'w', 'n', 'o', 'x', 'u',
+  'm', 'p', 'O', 'v', 'r',
+  't', 'L', 'z', 'y', 'o',
+  '0', '4', '5', '0'      
+]
+//In this case get everything except what we have provided inside the brackets.
+```
+## Example Eleven
+```javascript
+let example11 = new RegExp('l+','ig')
+const result11 = sentence.match(example11)
+console.log(result11)
+//The + sign used to get a letter that how many times its used in a word inside the string.
+//In here the L used three times onde at (lazy,really).Basically the + sign used wheather a letter repeated if does grab them.
+OutPut:>>
+[ 'L', 'll' ]
+```
+## Example Twelve
+```javascript
+let sentence2 = 'Gooooooooooooogle' //Just for testing purpose
+let example12 = new RegExp('go*','i') // Just o not the letters after the last o.
+let result12 = sentence2.match(example12)
+console.log(result12)
+//The * Astrix used to looking for zero or more time occurnce of a letter in string.
+//Go* --> Means whatever we dont know that how many times the o comes after the first o in the string , we just want that if they occurence is 0 or more time.
+```

@@ -1,5 +1,5 @@
 //simple sentence for testing
-const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog';
+const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10,';
 
 
 // let example1 = /Dog/  //--> True
@@ -69,5 +69,21 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog';
 // let result8 = sentence.match(example8)
 // console.log(result8)
 //--------------------------------------------------
-
+// let example9 = new RegExp('[1-3x-z]','ig')
+// let result9 = sentence.match(example9)
+// console.log(result9)
+//-------------------------------------------------
+// let exapmle10 = new RegExp('[^1-3a-k ]','ig')
+// let result10 = sentence.match(exapmle10)
+// console.log(result10)
+//---------------------------------------------
+// let example11 = new RegExp('l+','ig')
+// const result11 = sentence.match(example11)
+// console.log(result11)
+//-----------------------------------------
+// let sentence2 = 'Gooooooooooooogle' //Just for testing purpose
+// let example12 = new RegExp('go*','i')
+// let result12 = sentence2.match(example12)
+// console.log(result12)
+//----------------------------------------------
 
