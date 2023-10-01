@@ -58,7 +58,7 @@ let result_04 = sentence.match(example4_04)
 console.log(result_04)
 console.log(result_04[0]) // Access the word through index
 
-OutPut:>>
+OUTPUT:>>
 [
   'Lazy',
   index: 34,
@@ -76,7 +76,7 @@ console.log(result5)
 /*
 Using the ( g flag ) we basically get all the matched pattern and we dont care about that how many times its used inside the string.Means if the matched words occure two or more times it will give you in the result.
 */
-OutPut:>>
+OUTPUT:>>
 ['The','the'] //Because the (The) used twice in the sentence.
 
 let example5 = new RegExp('dog','ig')
@@ -85,7 +85,7 @@ console.log(result5)
 console.log(result5[0])
 
 
-OutPut:>>
+OUTPUT:>>
 ['Dog'] //Because the (dog) used once in the sentence.
 ```
 ## Example 6
@@ -98,7 +98,7 @@ Macthing pattern using match method with (wilcard .(dot) and i,g flags).
 A short summary of the wild card dot.what basically the wild card dot do.
 Dot dont care whatever the letter in the begging and at the end of pattern,grab all the words that they have o at mid.
 */
-OutPut:>>
+OUTPUT:>>
 [ 'row', 'Fox', ' Ov', 'Dog' ] 
 //Actually the exact words are the following
 ['Brown','Fox','Over','Dog']
@@ -111,7 +111,7 @@ let example6 = new RegExp('.o.','i')
 let result6 = sentence.match(example6)
 console.log(result6)
 
-OutPut:>>
+OUTPUT:>>
 [
   'row',
   index: 11,
@@ -124,7 +124,7 @@ let example6 = new RegExp('..o..','i')
 let result6 = sentence.match(example6)
 console.log(result6)
 
-OutPut:>>
+OUTPUT:>>
 [
   'Brown',
   index: 11,
@@ -139,7 +139,7 @@ let example7 = new RegExp('.','ig')
 let result7 = sentence.match(example7)
 console.log(result7)
 //Using only the dot wild card with Match method.
-OutPut:>>
+OUTPUT:>>
 [
   'T', 'h', 'e', ' ', 'Q', 'u', 'i',
   'c', 'k', ' ', 'B', 'r', 'o', 'w',
@@ -162,7 +162,7 @@ let example8 = new RegExp('[a-f]','ig')
 let result8 = sentence.match(example8)
 console.log(result8)
 
-OutPut:>>
+OUTPUT:>>
 [
   'e', 'c', 'B',
   'F', 'e', 'e',
@@ -183,7 +183,7 @@ let exapmle10 = new RegExp('[^1-3a-k ]','ig')
 let result10 = sentence.match(exapmle10)
 console.log(result10)
 
-OutPut:>>
+OUTPUT:>>
 [
   'T', 'Q', 'u', 'r', 'o',
   'w', 'n', 'o', 'x', 'u',
@@ -200,7 +200,7 @@ const result11 = sentence.match(example11)
 console.log(result11)
 //The + sign used to get a letter that how many times its used in a word inside the string.
 //In here the L used three times onde at (lazy,really).Basically the + sign used wheather a letter repeated if does grab them.
-OutPut:>>
+OUTPUT:>>
 [ 'L', 'll' ]
 ```
 ## Example 12
@@ -218,4 +218,36 @@ console.log(result12)
 let example13 = new RegExp('T.*?')
 let result13 = sentence.match(example13)
 console.log(result13)
+```
+## Example 14
+```javascript
+let example14 = new RegExp('^the','i')
+let result14 = sentence.match(example14)
+console.log(result14)
+// Dont be confused with ^ caret symbol.Outside in the bracket [] its means to get the beggening of the string or the first letter of the string.
+```
+## Example 15
+```javascript
+//Looking for the ending/last letter pattern in the string.
+let example14 = new RegExp('10$','i')//$ symbol is used to match the last letter of the string.
+let result14 = sentence.match(example14)
+console.log(result14)
+
+```
+## Example 16
+```javascript
+let exapmle15 = /\w/g; // it must check that the w is lowercase ,if doesn't it will not work.
+let result15 = sentence.match(exapmle15)
+console.log(result15)
+//The lowercase (\w) matches all the numbers 0-9,alphabats a-z and underscore _
+OUTPUT:>>
+[
+  'T', 'h', 'e', 'Q', 'u', 'i', 'c', 'k',
+  'B', 'r', 'o', 'w', 'n', 'F', 'o', 'x',
+  'J', 'u', 'm', 'p', 'O', 'v', 'e', 'r',
+  't', 'h', 'e', 'L', 'a', 'z', 'y', 'D',
+  'o', 'g', 'r', 'e', 'a', 'l', 'l', 'y',
+  '1', '2', '3', '0', '4', '5', '3', '1',
+  '1', '0', '_'
+]
 ```

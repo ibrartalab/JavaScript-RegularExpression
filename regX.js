@@ -1,5 +1,5 @@
 //simple sentence for testing
-const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10,';
+const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10 _ @ %% & *';
 
 
 // let example1 = /Dog/  //--> True
@@ -86,6 +86,19 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result12 = sentence2.match(example12)
 // console.log(result12)
 //----------------------------------------------
-let example13 = new RegExp('T.*?')
-let result13 = sentence.match(example13)
-console.log(result13)
+// let example13 = new RegExp('T.*?')
+// let result13 = sentence.match(example13)
+// console.log(result13)
+//-----------------------------------------------
+// let example14 = new RegExp('^the','i')
+// let result14 = sentence.match(example14)
+// console.log(result14)
+//------------------------------------------------
+// let example14 = new RegExp('10$','i')
+// let result14 = sentence.match(example14)
+// console.log(result14)
+//-------------------------------------------------
+// let exapmle15 = /\w/g; // it must check that the w is lowercase ,if doesn't it will not work.
+// let result15 = sentence.match(exapmle15)
+// console.log(result15)
+//----------------------------------------------
