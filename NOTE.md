@@ -285,3 +285,27 @@ let result18 = sentence.match(example18)
 console.log(result18)
 //get all the matched pattern except whitespaces.
 ```
+## Example 21
+```javascript
+// let example19 = new RegExp('o{10,15}').test(sentence) //false
+let example19 = new RegExp('o{5,15}').test(sentence) //true
+console.log(example19)
+
+let example19 = new RegExp('o{5}').test(sentence) //true
+console.log(example19)
+
+//check a pattern used min time and max time.same like provide a range.
+//{} its quantity specifier --> {5 min,15 max}
+
+//Get the matched values using Match method.
+let example19_9 = new RegExp('o{5,8}','g')
+let result19_9 = sentence.match(example19_9)
+console.log(result19_9)
+
+OUTPUT:>>
+[ 'oooooo' ]
+
+let example19_9 = new RegExp('o{5}')
+let result19_9 = sentence.match(example19_9)
+console.log(result19_9)
+```

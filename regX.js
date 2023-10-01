@@ -1,5 +1,5 @@
 //simple sentence for testing
-const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10 _ @ %% & * [] {} () /';
+const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10 _ @ %% & * [] {} () / goooooogle yeaaaaaaaaaaaaaaaaaaaaaah';
 
 
 // let example1 = /Dog/  //--> True
@@ -123,6 +123,21 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result18 = sentence.match(example18)
 // console.log(result18)
 //-----------------------------------------------
+// // let example19 = new RegExp('o{10,15}').test(sentence) //false
+// let example19 = new RegExp('o{5,15}').test(sentence) //true
+// console.log(example19)
+
+// let example19 = new RegExp('o{5}').test(sentence) //true
+// console.log(example19)
+
+// let example19_9 = new RegExp('o{5,8}','g')
+// let result19_9 = sentence.match(example19_9)
+// console.log(result19_9)
+
+// let example19_9 = new RegExp('o{5}')
+// let result19_9 = sentence.match(example19_9)
+// console.log(result19_9)
+//---------------------------------------------
 
 
 
