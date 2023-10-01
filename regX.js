@@ -1,5 +1,5 @@
 //simple sentence for testing
-const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10 _ @ %% & *';
+const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31 10 _ @ %% & * [] {} () /';
 
 
 // let example1 = /Dog/  //--> True
@@ -102,3 +102,9 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result15 = sentence.match(exapmle15)
 // console.log(result15)
 //----------------------------------------------
+// let example16 = new RegExp('\\W','g')
+// // let example16 = /\W/g;
+// let result16 = sentence.match(example16)
+// console.log(result16)
+//------------------------------------------------
+

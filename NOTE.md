@@ -251,3 +251,11 @@ OUTPUT:>>
   '1', '0', '_'
 ]
 ```
+## Example 17
+```javascript
+let example16 = new RegExp('\\W','g') //it must be capital W
+// let example16 = /\W/g;
+let result16 = sentence.match(example16)
+console.log(result16)
+//THe Capital \W is used to get all the non-character.Like not 0-9,a-z and underscore _ 
+```
