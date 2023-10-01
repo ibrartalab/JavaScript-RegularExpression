@@ -138,6 +138,21 @@ const sentence = 'The Quick Brown Fox Jump Over the Lazy Dog really 1 2 30 45 31
 // let result19_9 = sentence.match(example19_9)
 // console.log(result19_9)
 //---------------------------------------------
+// const colour = 'colour'
+// const color = 'color'
+// let example20 = new RegExp('colou?r').test(colour) //true
+// // let example20 = new RegExp('colou?r').test(color) //true
+// console.log(example20)
+//----------------------------------------------------
+// let example21 = new RegExp('j(?=u)','i').test(sentence) //true
+// console.log(example21)
+
+// let example21 = new RegExp('j(?!u)','i').test(sentence) //false
+// console.log(example21)
+
+// let example21 = new RegExp('j(?!m)','i').test(sentence) //true
+// console.log(example21)
+//--------------------------------------------------
 
 
 

@@ -309,3 +309,27 @@ let example19_9 = new RegExp('o{5}')
 let result19_9 = sentence.match(example19_9)
 console.log(result19_9)
 ```
+## Example 22
+```javascript
+const colour = 'colour'
+const color = 'color'
+let example20 = new RegExp('colou?r').test(colour) //true
+// let example20 = new RegExp('colou?r').test(color) //true
+console.log(example20)
+//The ( u ) is optional.
+```
+## Example 23
+```javascript
+//Positive Lookahead
+let example21 = new RegExp('j(?=u)','i').test(sentence) //true
+console.log(example21)
+//(?=u) its a condition checking that if the u come after j it will return true.
+
+//Negative Lookaheadlet example21 = new RegExp('j(?=u)','i').test(sentence)
+let example21 = new RegExp('j(?!u)','i').test(sentence) //false
+console.log(example21)
+
+let example21 = new RegExp('j(?!m)','i').test(sentence) //true
+console.log(example21)
+
+```
